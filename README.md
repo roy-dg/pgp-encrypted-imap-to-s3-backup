@@ -171,6 +171,7 @@ aws iam add-role-to-instance-profile --instance-profile-name mailbox-backup-prof
   again later — it's non-destructive (see the troubleshooting notes on
   `growpart`/`resize2fs` from setup).
 - IAM instance profile: `mailbox-backup-profile`
+- Only allow your own IP to connect (other inbound connections to be rejected)
 - Under "Advanced → Shutdown behavior," confirm it's set to **Stop** (this is
   the default for EBS-backed instances, but worth double-checking)
 
